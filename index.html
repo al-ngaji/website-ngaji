@@ -2,16 +2,17 @@
 <html lang="id">
 
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Ngaji Online</title>
+    <meta name="description"
+          content="Ngaji Online - Belajar Al-Qur'an dan ilmu agama dengan mudah, terstruktur, dan menyenangkan.">
+
+    <title>Ngaji Online | Belajar Al-Qur'an</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -21,55 +22,57 @@
          NAVBAR
     ========================== -->
 
-    <header>
+    <header class="header">
 
         <nav class="navbar">
 
-            <div class="logo">
+            <a href="#home" class="logo">
 
                 <img
                     src="images/logo.png"
                     alt="Logo Ngaji Online">
 
-                <span>
-                    Ngaji Online
-                </span>
+                <span>Ngaji Online</span>
 
-            </div>
+            </a>
 
-
-            <!-- Tombol Menu HP -->
 
             <button
                 class="menu-toggle"
-                onclick="toggleMenu()">
+                onclick="toggleMenu()"
+                aria-label="Buka menu">
 
                 ☰
 
             </button>
 
 
-            <!-- Menu -->
-
             <div class="menu" id="menu">
 
-                <a href="#home">
-                    Beranda
+                <a href="#home">Beranda</a>
+
+                <a href="#tentang">Tentang</a>
+
+                <a href="#program">Program</a>
+
+                <a href="#dokumentasi">
+                    Dokumentasi
                 </a>
 
-                <a href="#program">
-                    Program
-                </a>
+                <a href="#ulasan">Ulasan</a>
 
-                <a href="#tentang">
-                    Tentang
-                </a>
-
-                <a href="#kontak">
-                    Kontak
-                </a>
+                <a href="#kontak">Kontak</a>
 
             </div>
+
+
+            <a
+                href="#kontak"
+                class="nav-button">
+
+                Daftar Sekarang
+
+            </a>
 
         </nav>
 
@@ -81,350 +84,564 @@
          HERO
     ========================== -->
 
-    <section
-        class="hero"
-        id="home">
+    <main>
 
-        <div class="hero-content">
+        <section
+            class="hero"
+            id="home">
 
-            <p class="arabic">
+            <div class="hero-content">
 
-                بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+                <div class="badge">
 
-            </p>
-
-
-            <h1>
-
-                Belajar Al-Qur'an
-                <br>
-                dan Ilmu Agama
-
-            </h1>
-
-
-            <p>
-
-                Tempat belajar untuk meningkatkan
-                kemampuan membaca Al-Qur'an,
-                menghafal, dan memahami ilmu agama.
-
-            </p>
-
-
-            <div class="hero-buttons">
-
-                <a
-                    href="#program"
-                    class="btn-primary">
-
-                    Mulai Belajar
-
-                </a>
-
-
-                <a
-                    href="#tentang"
-                    class="btn-secondary">
-
-                    Tentang Kami
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         PROGRAM
-    ========================== -->
-
-    <section
-        class="program"
-        id="program">
-
-
-        <div class="section-title">
-
-            <p>
-                PROGRAM PEMBELAJARAN
-            </p>
-
-
-            <h2>
-
-                Belajar Bersama Kami
-
-            </h2>
-
-
-            <span>
-
-                Pilih program yang sesuai
-                dengan kebutuhan belajar Anda.
-
-            </span>
-
-        </div>
-
-
-
-        <div class="program-container">
-
-
-            <!-- Tahsin -->
-
-            <div class="program-card">
-
-                <div class="program-icon">
-
-                    📖
+                    ✨ Pendaftaran Santri Dibuka
 
                 </div>
 
 
-                <h3>
+                <p class="arabic">
 
-                    Tahsin Al-Qur'an
-
-                </h3>
-
-
-                <p>
-
-                    Belajar membaca Al-Qur'an
-                    dengan makhraj dan tajwid
-                    yang benar.
+                    بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 
                 </p>
 
 
-                <a href="#kontak">
+                <h1>
 
-                    Pelajari →
+                    Membangun Generasi
+                    <span>Qur'ani</span>
 
-                </a>
-
-            </div>
-
+                </h1>
 
 
-            <!-- Tahfidz -->
+                <p class="hero-description">
 
-            <div class="program-card">
+                    Belajar Al-Qur'an dan ilmu agama
+                    dengan metode yang mudah,
+                    terstruktur, dan menyenangkan.
 
-                <div class="program-icon">
+                </p>
 
-                    🕌
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#program"
+                        class="btn-primary">
+
+                        Lihat Program →
+
+                    </a>
+
+
+                    <a
+                        href="#tentang"
+                        class="btn-outline">
+
+                        Tentang Kami
+
+                    </a>
 
                 </div>
 
-
-                <h3>
-
-                    Tahfidz Al-Qur'an
-
-                </h3>
-
-
-                <p>
-
-                    Program menghafal Al-Qur'an
-                    secara bertahap dan terarah.
-
-                </p>
-
-
-                <a href="#kontak">
-
-                    Pelajari →
-
-                </a>
-
             </div>
 
 
-
-            <!-- Bahasa Arab -->
-
-            <div class="program-card">
-
-                <div class="program-icon">
-
-                    📚
-
-                </div>
-
-
-                <h3>
-
-                    Bahasa Arab
-
-                </h3>
-
-
-                <p>
-
-                    Belajar bahasa Arab untuk
-                    membantu memahami Al-Qur'an
-                    dan kitab-kitab Islam.
-
-                </p>
-
-
-                <a href="#kontak">
-
-                    Pelajari →
-
-                </a>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         TENTANG KAMI
-    ========================== -->
-
-    <section
-        class="about"
-        id="tentang">
-
-
-        <div class="about-container">
-
-
-            <!-- Gambar -->
-
-            <div class="about-image">
+            <div class="hero-image">
 
                 <img
                     src="images/ustadz.jpg"
-                    alt="Pembelajaran Ngaji">
+                    alt="Belajar Al-Qur'an">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             STATISTIK
+        ========================== -->
+
+        <section class="stats">
+
+            <div class="stat-item">
+
+                <strong>100+</strong>
+
+                <span>Santri</span>
 
             </div>
 
 
+            <div class="stat-item">
 
-            <!-- Isi -->
+                <strong>10+</strong>
 
-            <div class="about-content">
+                <span>Pengajar</span>
 
-                <p class="about-label">
+            </div>
 
+
+            <div class="stat-item">
+
+                <strong>6+</strong>
+
+                <span>Program</span>
+
+            </div>
+
+
+            <div class="stat-item">
+
+                <strong>100%</strong>
+
+                <span>Semangat Belajar</span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             TENTANG
+        ========================== -->
+
+        <section
+            class="section about"
+            id="tentang">
+
+            <div class="section-heading">
+
+                <p class="section-label">
                     TENTANG KAMI
-
                 </p>
-
 
                 <h2>
-
-                    Belajar Agama
-                    dengan Mudah
-
+                    Belajar Mengaji
+                    Lebih Mudah
                 </h2>
 
-
-                <p>
-
-                    Ngaji Online adalah tempat belajar
-                    Al-Qur'an dan ilmu agama secara
-                    bertahap, mudah, dan menyenangkan.
-
-                </p>
+            </div>
 
 
-                <div class="about-list">
+            <div class="about-grid">
 
-                    <p>
-                        ✓ Pembelajaran Al-Qur'an
-                    </p>
+                <div class="about-image">
 
-                    <p>
-                        ✓ Program Tahsin
-                    </p>
-
-                    <p>
-                        ✓ Program Tahfidz
-                    </p>
-
-                    <p>
-                        ✓ Pembelajaran Bahasa Arab
-                    </p>
+                    <img
+                        src="images/ustadz.jpg"
+                        alt="Kegiatan belajar mengaji">
 
                 </div>
 
 
-                <a
-                    href="#kontak"
-                    class="about-button">
+                <div class="about-text">
 
-                    Hubungi Kami
+                    <h3>
+                        Menjadikan Al-Qur'an
+                        sebagai bagian dari kehidupan
+                    </h3>
+
+
+                    <p>
+
+                        Ngaji Online hadir untuk membantu
+                        siapa saja belajar Al-Qur'an dan
+                        ilmu agama secara bertahap.
+
+                    </p>
+
+
+                    <p>
+
+                        Pembelajaran dirancang agar mudah
+                        dipahami, terarah, dan dapat
+                        disesuaikan dengan kebutuhan santri.
+
+                    </p>
+
+
+                    <div class="check-list">
+
+                        <p>✓ Belajar bertahap</p>
+
+                        <p>✓ Pengajar berpengalaman</p>
+
+                        <p>✓ Materi terstruktur</p>
+
+                        <p>✓ Pendampingan belajar</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PROGRAM
+        ========================== -->
+
+        <section
+            class="section programs"
+            id="program">
+
+            <div class="section-heading center">
+
+                <p class="section-label">
+                    PROGRAM BELAJAR
+                </p>
+
+                <h2>
+                    Pilihan Program
+                </h2>
+
+                <p>
+                    Pilih program sesuai kebutuhan
+                    dan tujuan belajar Anda.
+                </p>
+
+            </div>
+
+
+            <div class="program-grid">
+
+
+                <article class="program-card">
+
+                    <div class="program-icon">
+                        📖
+                    </div>
+
+                    <h3>
+                        Tahsin Al-Qur'an
+                    </h3>
+
+                    <p>
+                        Memperbaiki bacaan,
+                        makhraj, dan tajwid.
+                    </p>
+
+                    <a href="#kontak">
+                        Daftar →
+                    </a>
+
+                </article>
+
+
+                <article class="program-card">
+
+                    <div class="program-icon">
+                        🕌
+                    </div>
+
+                    <h3>
+                        Tahfidz Al-Qur'an
+                    </h3>
+
+                    <p>
+                        Menghafal Al-Qur'an
+                        secara bertahap dan terarah.
+                    </p>
+
+                    <a href="#kontak">
+                        Daftar →
+                    </a>
+
+                </article>
+
+
+                <article class="program-card">
+
+                    <div class="program-icon">
+                        📚
+                    </div>
+
+                    <h3>
+                        Bahasa Arab
+                    </h3>
+
+                    <p>
+                        Belajar dasar bahasa Arab
+                        untuk memahami Al-Qur'an.
+                    </p>
+
+                    <a href="#kontak">
+                        Daftar →
+                    </a>
+
+                </article>
+
+
+                <article class="program-card">
+
+                    <div class="program-icon">
+                        🎙️
+                    </div>
+
+                    <h3>
+                        Tilawah Al-Qur'an
+                    </h3>
+
+                    <p>
+                        Belajar membaca Al-Qur'an
+                        dengan suara dan irama yang baik.
+                    </p>
+
+                    <a href="#kontak">
+                        Daftar →
+                    </a>
+
+                </article>
+
+
+                <article class="program-card">
+
+                    <div class="program-icon">
+                        📝
+                    </div>
+
+                    <h3>
+                        Fiqih & Akhlak
+                    </h3>
+
+                    <p>
+                        Mempelajari dasar ibadah
+                        dan akhlak dalam kehidupan.
+                    </p>
+
+                    <a href="#kontak">
+                        Daftar →
+                    </a>
+
+                </article>
+
+
+                <article class="program-card">
+
+                    <div class="program-icon">
+                        🗣️
+                    </div>
+
+                    <h3>
+                        Adab & Dakwah
+                    </h3>
+
+                    <p>
+                        Membentuk adab dan kemampuan
+                        menyampaikan kebaikan.
+                    </p>
+
+                    <a href="#kontak">
+                        Daftar →
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             DOKUMENTASI
+        ========================== -->
+
+        <section
+            class="section documentation"
+            id="dokumentasi">
+
+            <div class="section-heading center">
+
+                <p class="section-label">
+                    DOKUMENTASI
+                </p>
+
+                <h2>
+                    Kegiatan Belajar
+                </h2>
+
+                <p>
+                    Beberapa dokumentasi kegiatan
+                    pembelajaran Ngaji Online.
+                </p>
+
+            </div>
+
+
+            <div class="gallery">
+
+                <div class="gallery-item">
+                    <img
+                        src="images/ustadz.jpg"
+                        alt="Kegiatan 1">
+                </div>
+
+
+                <div class="gallery-item">
+                    <img
+                        src="images/ustadz.jpg"
+                        alt="Kegiatan 2">
+                </div>
+
+
+                <div class="gallery-item">
+                    <img
+                        src="images/ustadz.jpg"
+                        alt="Kegiatan 3">
+                </div>
+
+
+                <div class="gallery-item">
+                    <img
+                        src="images/ustadz.jpg"
+                        alt="Kegiatan 4">
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ULASAN
+        ========================== -->
+
+        <section
+            class="section reviews"
+            id="ulasan">
+
+            <div class="section-heading center">
+
+                <p class="section-label">
+                    ULASAN
+                </p>
+
+                <h2>
+                    Apa Kata Mereka?
+                </h2>
+
+            </div>
+
+
+            <div class="review-grid">
+
+
+                <article class="review-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+
+                        "Pembelajarannya mudah dipahami
+                        dan pengajarnya sangat sabar."
+
+                    </p>
+
+                    <strong>
+                        Wali Santri
+                    </strong>
+
+                </article>
+
+
+                <article class="review-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+
+                        "Materinya terstruktur sehingga
+                        lebih mudah mengikuti proses belajar."
+
+                    </p>
+
+                    <strong>
+                        Santri
+                    </strong>
+
+                </article>
+
+
+                <article class="review-card">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+
+                        "Alhamdulillah, belajar Al-Qur'an
+                        menjadi lebih menyenangkan."
+
+                    </p>
+
+                    <strong>
+                        Orang Tua Santri
+                    </strong>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CTA / KONTAK
+        ========================== -->
+
+        <section
+            class="cta"
+            id="kontak">
+
+            <div class="cta-content">
+
+                <p class="section-label">
+                    MULAI SEKARANG
+                </p>
+
+                <h2>
+                    Siap Memulai
+                    Perjalanan Mengaji?
+                </h2>
+
+                <p>
+
+                    Hubungi kami untuk mendapatkan
+                    informasi program dan jadwal belajar.
+
+                </p>
+
+
+                <a
+                    href="https://wa.me/6281234567890?text=Assalamu%27alaikum%2C%20saya%20ingin%20bertanya%20tentang%20program%20Ngaji%20Online."
+                    target="_blank"
+                    class="btn-whatsapp">
+
+                    💬 Daftar & Konsultasi
 
                 </a>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
-
-
-
-    <!-- =========================
-         KONTAK
-    ========================== -->
-
-    <section
-        class="contact"
-        id="kontak">
-
-
-        <div class="contact-container">
-
-            <p class="contact-label">
-
-                HUBUNGI KAMI
-
-            </p>
-
-
-            <h2>
-
-                Siap Mulai Belajar?
-
-            </h2>
-
-
-            <p>
-
-                Jika ingin bertanya atau mendaftar,
-                silakan hubungi kami melalui WhatsApp.
-
-            </p>
-
-
-            <a
-                href="https://wa.me/6281234567890?text=Assalamu%27alaikum%2C%20saya%20ingin%20bertanya%20tentang%20program%20Ngaji%20Online."
-                class="whatsapp-button"
-                target="_blank">
-
-                💬 Hubungi via WhatsApp
-
-            </a>
-
-        </div>
-
-    </section>
+    </main>
 
 
 
@@ -434,29 +651,91 @@
 
     <footer>
 
-        <div class="footer-content">
-
-            <h3>
-
-                🕌 Ngaji Online
-
-            </h3>
+        <div class="footer-grid">
 
 
-            <p>
+            <div class="footer-brand">
 
-                Belajar Al-Qur'an dan ilmu agama
-                dengan mudah dan menyenangkan.
+                <div class="footer-logo">
 
-            </p>
+                    <img
+                        src="images/logo.png"
+                        alt="Logo">
+
+                    <strong>
+                        Ngaji Online
+                    </strong>
+
+                </div>
 
 
-            <p class="copyright">
+                <p>
 
-                © 2026 Ngaji Online.
-                Semua hak dilindungi.
+                    Membangun generasi Qur'ani
+                    melalui pembelajaran Al-Qur'an
+                    dan ilmu agama.
 
-            </p>
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Menu
+                </h3>
+
+                <a href="#home">
+                    Beranda
+                </a>
+
+                <a href="#tentang">
+                    Tentang
+                </a>
+
+                <a href="#program">
+                    Program
+                </a>
+
+                <a href="#dokumentasi">
+                    Dokumentasi
+                </a>
+
+                <a href="#ulasan">
+                    Ulasan
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Kontak
+                </h3>
+
+                <p>
+                    📱 WhatsApp
+                </p>
+
+                <p>
+                    📧 Email
+                </p>
+
+                <p>
+                    📍 Indonesia
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Ngaji Online.
+            Semua hak dilindungi.
 
         </div>
 
@@ -464,12 +743,8 @@
 
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
-
     <script src="script.js"></script>
 
 </body>
 
-</html>
+                    </html>
