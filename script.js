@@ -1,27 +1,31 @@
-// ================================
+// ========================================
 // MENU MOBILE
-// ================================
+// ========================================
 
 function toggleMenu() {
 
-    const menu = document.getElementById("menu");
+    const menu =
+        document.getElementById("menu");
 
     menu.classList.toggle("active");
 
 }
 
 
-// ================================
-// TUTUP MENU SETELAH LINK DIKLIK
-// ================================
+// ========================================
+// TUTUP MENU SAAT LINK DIKLIK
+// ========================================
 
-const menuLinks = document.querySelectorAll("#menu a");
+const menuLinks =
+    document.querySelectorAll("#menu a");
+
 
 menuLinks.forEach(function(link) {
 
     link.addEventListener("click", function() {
 
-        const menu = document.getElementById("menu");
+        const menu =
+            document.getElementById("menu");
 
         menu.classList.remove("active");
 
