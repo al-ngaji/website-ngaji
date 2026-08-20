@@ -11,7 +11,64 @@
     <title>Ngaji Online</title>
 
     <style>
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(
+        135deg,
+        #14532d,
+        #166534
+    );
+    color: white;
+}
 
+.hero-content {
+    max-width: 700px;
+}
+
+.arabic {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.arabic) {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 13px 25px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: white;
+    color: #14532d;
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
       .navbar {
     display: flex;
     justify-content: space-between;
@@ -101,7 +158,32 @@
             text-align: center;
             padding: 20px;
         }
+@media (max-width: 600px) {
 
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .arabic {
+        font-size: 21px;
+    }
+
+    .hero-content > p:not(.arabic) {
+        font-size: 16px;
+    }
+
+}
     </style>
 <script src="script.js"></script>
 </head>
@@ -135,20 +217,38 @@
 
     <section class="hero" id="home">
 
-        <h2>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</h2>
+    <div class="hero-content">
 
-        <h2>Selamat Datang</h2>
-
-        <p>
-            Mari belajar Al-Qur'an dan ilmu agama
-            dengan mudah dan menyenangkan.
+        <p class="arabic">
+            بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
         </p>
 
-        <a href="#program" class="button">
-            Lihat Program
-        </a>
+        <h1>
+            Belajar Al-Qur'an<br>
+            dan Ilmu Agama
+        </h1>
 
-    </section>
+        <p>
+            Tempat belajar untuk meningkatkan
+            kemampuan membaca Al-Qur'an,
+            menghafal, dan memahami ilmu agama.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#program" class="btn-primary">
+                Mulai Belajar
+            </a>
+
+            <a href="#tentang" class="btn-secondary">
+                Tentang Kami
+            </a>
+
+        </div>
+
+    </div>
+
+      </section>
 
 
     <section class="program" id="program">
