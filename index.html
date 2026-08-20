@@ -2,7 +2,7 @@
 <html lang="id">
 
 <head>
-  <link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
@@ -10,318 +10,466 @@
 
     <title>Ngaji Online</title>
 
-    <style>
-.hero {
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(
-        135deg,
-        #14532d,
-        #166534
-    );
-    color: white;
-}
+    <link rel="stylesheet" href="style.css">
 
-.hero-content {
-    max-width: 700px;
-}
-
-.arabic {
-    font-size: 25px;
-    margin-bottom: 25px;
-}
-
-.hero h1 {
-    font-size: 42px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.hero-content > p:not(.arabic) {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.hero-buttons {
-    margin-top: 30px;
-}
-
-.btn-primary,
-.btn-secondary {
-    display: inline-block;
-    padding: 13px 25px;
-    margin: 5px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn-primary {
-    background: white;
-    color: #14532d;
-}
-
-.btn-secondary {
-    border: 2px solid white;
-    color: white;
-}
-      .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: #14532d;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
-
-.menu {
-    display: flex;
-    gap: 20px;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.menu a:hover {
-    text-decoration: underline;
-}
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #222;
-        }
-
-        header {
-            background: #14532d;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-            background: white;
-        }
-
-        .hero h2 {
-            font-size: 30px;
-        }
-
-        .hero p {
-            font-size: 18px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 25px;
-            margin-top: 15px;
-            background: #14532d;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-
-        .program {
-            padding: 30px 20px;
-            text-align: center;
-        }
-
-        .card {
-            background: white;
-            margin: 15px auto;
-            padding: 20px;
-            max-width: 400px;
-            border-radius: 12px;
-        }
-
-        footer {
-            background: #14532d;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-@media (max-width: 600px) {
-
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .menu {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .arabic {
-        font-size: 21px;
-    }
-
-    .hero-content > p:not(.arabic) {
-        font-size: 16px;
-    }
-
-}
-    </style>
-<script src="script.js"></script>
 </head>
 
 <body>
 
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
     <header>
 
-    <nav class="navbar">
+        <nav class="navbar">
 
-        <div class="logo">
-            🕌 Ngaji Online
-        </div>
+            <div class="logo">
 
-        <div class="menu">
+                <img
+                    src="images/logo.png"
+                    alt="Logo Ngaji Online">
 
-            <a href="#home">Beranda</a>
+                <span>
+                    Ngaji Online
+                </span>
 
-            <a href="#program">Program</a>
+            </div>
 
-            <a href="#tentang">Tentang</a>
 
-            <a href="#kontak">Kontak</a>
+            <!-- Tombol Menu HP -->
 
-        </div>
+            <button
+                class="menu-toggle"
+                onclick="toggleMenu()">
 
-    </nav>
+                ☰
+
+            </button>
+
+
+            <!-- Menu -->
+
+            <div class="menu" id="menu">
+
+                <a href="#home">
+                    Beranda
+                </a>
+
+                <a href="#program">
+                    Program
+                </a>
+
+                <a href="#tentang">
+                    Tentang
+                </a>
+
+                <a href="#kontak">
+                    Kontak
+                </a>
+
+            </div>
+
+        </nav>
 
     </header>
 
 
-    <section class="hero" id="home">
 
-    <div class="hero-content">
+    <!-- =========================
+         HERO
+    ========================== -->
 
-        <p class="arabic">
-            بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
-        </p>
+    <section
+        class="hero"
+        id="home">
 
-        <h1>
-            Belajar Al-Qur'an<br>
-            dan Ilmu Agama
-        </h1>
+        <div class="hero-content">
 
-        <p>
-            Tempat belajar untuk meningkatkan
-            kemampuan membaca Al-Qur'an,
-            menghafal, dan memahami ilmu agama.
-        </p>
+            <p class="arabic">
 
-        <div class="hero-buttons">
+                بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 
-            <a href="#program" class="btn-primary">
-                Mulai Belajar
-            </a>
+            </p>
 
-            <a href="#tentang" class="btn-secondary">
-                Tentang Kami
-            </a>
+
+            <h1>
+
+                Belajar Al-Qur'an
+                <br>
+                dan Ilmu Agama
+
+            </h1>
+
+
+            <p>
+
+                Tempat belajar untuk meningkatkan
+                kemampuan membaca Al-Qur'an,
+                menghafal, dan memahami ilmu agama.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    href="#program"
+                    class="btn-primary">
+
+                    Mulai Belajar
+
+                </a>
+
+
+                <a
+                    href="#tentang"
+                    class="btn-secondary">
+
+                    Tentang Kami
+
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
-
-      </section>
-
-
-    <section class="program" id="program">
-
-        <h2>Program Kami</h2>
-
-        <div class="card">
-
-            <h3>📖 Tahsin Al-Qur'an</h3>
-
-            <p>
-                Belajar membaca Al-Qur'an
-                dengan baik dan benar.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>🕌 Tahfidz Al-Qur'an</h3>
-
-            <p>
-                Program menghafal Al-Qur'an
-                secara bertahap.
-            </p>
-
-        </div>
-
-
-        <div class="card">
-
-            <h3>📚 Bahasa Arab</h3>
-
-            <p>
-                Belajar dasar-dasar bahasa Arab
-                untuk memahami Al-Qur'an.
-            </p>
-
-        </div>
-
-      
-        <div class="card">
-
-            <h3>📚 Fiqih</h3>
-
-            <p>
-                Belajar Fiqih agar ibadah bernilai sempurna.
-            </p>
-
-        </div>
-
-      <div class="card">
-
-            <h3>📚 Tasawuf</h3>
-
-            <p>
-                Belajar menjaga diri agar hati bersih dari keburukan.
-            </p>
-
-      </div>
-      
     </section>
 
 
+
+    <!-- =========================
+         PROGRAM
+    ========================== -->
+
+    <section
+        class="program"
+        id="program">
+
+
+        <div class="section-title">
+
+            <p>
+                PROGRAM PEMBELAJARAN
+            </p>
+
+
+            <h2>
+
+                Belajar Bersama Kami
+
+            </h2>
+
+
+            <span>
+
+                Pilih program yang sesuai
+                dengan kebutuhan belajar Anda.
+
+            </span>
+
+        </div>
+
+
+
+        <div class="program-container">
+
+
+            <!-- Tahsin -->
+
+            <div class="program-card">
+
+                <div class="program-icon">
+
+                    📖
+
+                </div>
+
+
+                <h3>
+
+                    Tahsin Al-Qur'an
+
+                </h3>
+
+
+                <p>
+
+                    Belajar membaca Al-Qur'an
+                    dengan makhraj dan tajwid
+                    yang benar.
+
+                </p>
+
+
+                <a href="#kontak">
+
+                    Pelajari →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- Tahfidz -->
+
+            <div class="program-card">
+
+                <div class="program-icon">
+
+                    🕌
+
+                </div>
+
+
+                <h3>
+
+                    Tahfidz Al-Qur'an
+
+                </h3>
+
+
+                <p>
+
+                    Program menghafal Al-Qur'an
+                    secara bertahap dan terarah.
+
+                </p>
+
+
+                <a href="#kontak">
+
+                    Pelajari →
+
+                </a>
+
+            </div>
+
+
+
+            <!-- Bahasa Arab -->
+
+            <div class="program-card">
+
+                <div class="program-icon">
+
+                    📚
+
+                </div>
+
+
+                <h3>
+
+                    Bahasa Arab
+
+                </h3>
+
+
+                <p>
+
+                    Belajar bahasa Arab untuk
+                    membantu memahami Al-Qur'an
+                    dan kitab-kitab Islam.
+
+                </p>
+
+
+                <a href="#kontak">
+
+                    Pelajari →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         TENTANG KAMI
+    ========================== -->
+
+    <section
+        class="about"
+        id="tentang">
+
+
+        <div class="about-container">
+
+
+            <!-- Gambar -->
+
+            <div class="about-image">
+
+                <img
+                    src="images/ustadz.jpg"
+                    alt="Pembelajaran Ngaji">
+
+            </div>
+
+
+
+            <!-- Isi -->
+
+            <div class="about-content">
+
+                <p class="about-label">
+
+                    TENTANG KAMI
+
+                </p>
+
+
+                <h2>
+
+                    Belajar Agama
+                    dengan Mudah
+
+                </h2>
+
+
+                <p>
+
+                    Ngaji Online adalah tempat belajar
+                    Al-Qur'an dan ilmu agama secara
+                    bertahap, mudah, dan menyenangkan.
+
+                </p>
+
+
+                <div class="about-list">
+
+                    <p>
+                        ✓ Pembelajaran Al-Qur'an
+                    </p>
+
+                    <p>
+                        ✓ Program Tahsin
+                    </p>
+
+                    <p>
+                        ✓ Program Tahfidz
+                    </p>
+
+                    <p>
+                        ✓ Pembelajaran Bahasa Arab
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="#kontak"
+                    class="about-button">
+
+                    Hubungi Kami
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         KONTAK
+    ========================== -->
+
+    <section
+        class="contact"
+        id="kontak">
+
+
+        <div class="contact-container">
+
+            <p class="contact-label">
+
+                HUBUNGI KAMI
+
+            </p>
+
+
+            <h2>
+
+                Siap Mulai Belajar?
+
+            </h2>
+
+
+            <p>
+
+                Jika ingin bertanya atau mendaftar,
+                silakan hubungi kami melalui WhatsApp.
+
+            </p>
+
+
+            <a
+                href="https://wa.me/6281234567890?text=Assalamu%27alaikum%2C%20saya%20ingin%20bertanya%20tentang%20program%20Ngaji%20Online."
+                class="whatsapp-button"
+                target="_blank">
+
+                💬 Hubungi via WhatsApp
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
-        <p>
-            © 2026 Ngaji Online
-        </p>
+        <div class="footer-content">
+
+            <h3>
+
+                🕌 Ngaji Online
+
+            </h3>
+
+
+            <p>
+
+                Belajar Al-Qur'an dan ilmu agama
+                dengan mudah dan menyenangkan.
+
+            </p>
+
+
+            <p class="copyright">
+
+                © 2026 Ngaji Online.
+                Semua hak dilindungi.
+
+            </p>
+
+        </div>
 
     </footer>
 
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
 </body>
 
-  </html>
+</html>
